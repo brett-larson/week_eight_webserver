@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Credit Card Payment Processing Application</title>
+    </head>
+    <body>
+        <h2>Credit Card Information Input Page</h2>
+        <p>Please enter your credit card information in the form below to complete your purchase.</p>
+
+        <form method="POST" enctype="application/json">
+            {{form.hidden_tag()}}
+            <h3>Credit Card Information Form</h3>
+            {{form.name.label}}{{form.name()}}
+            <br>
+            {{form.address.label}}{{form.address()}}
+            <br>
+            {{form.phone_number.label}}{{form.phone_number()}}
+            <br>
+            {{form.credit_card_number.label}}{{form.credit_card_number()}}
+            <br>
+            {{form.card_expiration_date.label}}{{form.card_expiration_date()}}
+            <br>
+            {{form.submit()}}
+        
+        </form>
+    </body>
+
+</html>
