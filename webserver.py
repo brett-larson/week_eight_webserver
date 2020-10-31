@@ -1,7 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
 from forms import PaymentForm
-from cryptography.fernet import Fernet
-
 
 
 app = Flask(__name__)
